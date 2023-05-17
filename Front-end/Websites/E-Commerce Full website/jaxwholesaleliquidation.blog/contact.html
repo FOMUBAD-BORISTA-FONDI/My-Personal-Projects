@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&
+    family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="img/logo.JPG" alt="LOGO">
+        </a>
+
+        <ul class="navbar">
+            <li> <a href="index.html"> Home</li></a>
+            <li> <a href="shop.html"> Shop</li></a>
+            <li> <a href="about.html"> About</li></a>
+            <li> <a href="index.html#blog"> News</li></a>
+            <li> <a href="contact.html"> Contact</li></a>
+        </ul>
+
+        <div class="h-icons">
+            <a href="shop.html"><i class='bx bx-shopping-bag'></i></a>
+            <a href="#"><i class='bx bx-phone'></i></a>
+            <a href="about.html#contact"><i class='bx bx-navigation'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+ <div class="contact-us">
+    <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Yaounde, Carrefour Biyem-assi</div>
+              <div class="text-two">Bamenda, Hospital Round-about</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+237 680 891 026</div>
+              <div class="text-two">+237 680 942 477</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">fomubadborister@gmail.com</div>
+              <div class="text-two">bernardche73@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>Please provide all informations about the ordered package with a clear description of the location.
+              Note that this would help during the delivery process. 
+            </p>
+          <form action="https://formspree.io/f/xlekwbqb" method="POST" >
+            <div class="input-box">
+              <input type="text" name="Name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <input type="email" name="Email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <input type="text" name="Subject" placeholder="Subject" required>
+            </div>
+            <div class="input-box message-box">
+              <textarea  name="Description" placeholder="Type your message..."></textarea>
+            </div>
+            <div class="button">
+              <a href="index.html">
+                <button type="submit" onsubmit="reset();">Submit</button>
+              </a>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <a href="#" class="scroll-top"><i class='bx bx-chevrons-up' ></i></a>
+
+
+    <script src="js/script.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function sendEmail(){
+        sendEmail.send({
+          Host: "smtp.gmail.com",
+          Username: "bernardche73@gmail.com",
+          Password: "abcd68089",
+          To : 'daniellesgrace176@gmail.com',
+          From : document.getElementById("email").value,
+          subject : "This is the subject",
+          Body : "And this is the body"
+        }).then(
+          message => alert(message)
+          );
+        }
+    </script> -->
+</body>
+</html>
+
+
+<!-- onsubmit="sendEmail(); reset(); return false;" -->

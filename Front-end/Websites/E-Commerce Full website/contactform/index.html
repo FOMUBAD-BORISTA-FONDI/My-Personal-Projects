@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Contact Form</title>
+    <!-- Form styling -->
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="formcarry-container">
+      <form class="formcarry-form" action="https://formsubmit.co/daniellesgrace176@gmail.com" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="Names" required />
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="Email" required />
+        <label for="message">Your Message</label>
+        <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+<!--  onsubmit="sendEmail(); reset(); return false;" -->
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "bernardche73@gmail.com",
+                    Password : "abcd68089",
+                    To : 'daniellesgrace176@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New contact form enquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+        }
+    </script> -->
