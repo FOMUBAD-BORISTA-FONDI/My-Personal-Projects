@@ -1,2 +1,9 @@
+Admin Login
+
 Name: admin
 Password: admin
+
+User Login
+
+Name:benardche73@gmail.com
+Password: 1234
