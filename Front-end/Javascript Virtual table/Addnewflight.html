@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Flight Number" id="number" >
+    <input type="text" placeholder="Departure Destination" id="departure" >
+    <input type="text" placeholder="Arrival destination" id="arrival" >
+    <input type="time" placeholder="Departure time" id="time" >
+    <input type="date" placeholder="Date" id="date" >
+     <button>Add</button>
+    <table>
+        <tr>
+            <th>Flight Number</th>
+            <th>Departure destination</th>
+            <th>Arrival destination</th>
+            <th>Departure Time</th>
+            <th>Date</th>
+            <th>    </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cameroon</td>
+            <td>Nigeria</td>
+            <td>12:15pm</td>
+            <td>25-02-2023</td>
+            <td><a href="">select</a></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Nigeria</td>
+            <td>Cameroon</td>
+            <td>12:15pm</td>
+            <td>25-02-2023</td>
+            <td><a href="">select</a></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Chad</td>
+            <td>Congo</td>
+            <td>1:15pm</td>
+            <td>27-02-2023</td>
+            <td><a href="">select</a></td>
+        </tr>
+    </table>
+
+    <style>
+         table{
+                z-index: 2;
+                left: 50%;
+                top:  50%;
+                width: 60%;
+                height: 150px;
+                text-align: center;
+                background: #b0aeae;
+                border-collapse: collapse;
+                border-spacing: 0;
+                border-radius: 12px 12px 0 0;
+                overflow: hidden;
+                box-shadow: 0 12px 2px rgba(32, 32, 32, .3);
+            }
+            th{
+                background: #717070;
+                padding: 10px 15px;
+            }
+            td{
+                padding: 10px 15px;
+                background: #ede6e6;
+            }
+    </style>
+    <script src="Addnewflight.js"></script>
+</body>
+</html>
