@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Author:Fomubad Borista -->
+    <meta charset="utf-8">
+    <title>Password Show Toggle | KNOWLEDGE BANK </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="first">
+      <input type="password" placeholder="Enter Password" required>
+      <span class="show-btn"><i class="fas fa-eye"></i></span>
+    </div>
+      <input type="password" placeholder="Confirm Password" required>
+      <span class="show-btn"><i class="fas fa-eye"></i></span>
+    </div>
+    <script>
+      const passField = document.querySelector("input");
+      const showBtn = document.querySelector("span i");
+      const passField1 = document.querySelector("input");
+     //For password
+      showBtn.onclick = (()=>{
+        if(passField.type === "password"){
+          passField.type = "text";
+          showBtn.classList.add("hide-btn");
+        }else{
+          passField.type = "password";
+          showBtn.classList.remove("hide-btn");
+        }
+      });
+      //For confirm password
+    //   showBtn.onclick = (()=>{
+    //     if(passField1.type === "hidden"){
+    //       passField.type = "text";
+    //       showBtn.classList.add("hide-btn");
+    //     }else{
+    //       passField.type = "hidden";
+    //       showBtn.classList.remove("hide-btn");
+    //     }
+    //   });
+    </script>
+  </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password</title>
+</head>
+<body>
+    <div class="wrapper">
+    
+    <input type="password" placeholder="Enter Password" id="myInput">
+    
+    <input type="checkbox" onclick="myFunction()">Show Password
+
+    <input type="password" placeholder="Confirm Password" id="myInput1">
+    <input type="checkbox" onclick="myFunction1()">Show Password
+</div>
+<style>
+    .wrapper{
+    display: flex;
+    vertical-align: middle;
+    }
+</style>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+function myFunction1() {
+  var y = document.getElementById("myInput1");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</body>
+</html>
+ -->
