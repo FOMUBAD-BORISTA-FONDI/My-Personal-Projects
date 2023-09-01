@@ -1,5 +1,5 @@
 # My-Personal-Projects
-Here is a repository which GitHub repository showcasing a diverse collection of over 50 personal projects along with other projects developed in both PHP and JavaScript. This repository serves as a comprehensive portfolio that demonstrates my skills, creativity, and passion for coding. 
+Here is my Personal GitHub repository showcasing a diverse collection of over 50 personal projects along with other projects developed in both PHP and JavaScript. This repository serves as a comprehensive portfolio that demonstrates my skills, creativity, and passion for coding. 
 
 ## About
 
