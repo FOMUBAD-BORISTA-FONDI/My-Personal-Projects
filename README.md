@@ -12,7 +12,7 @@ The projects featured here encompass a variety of domains, including but not lim
 - UI/UX design explorations
 - Data visualization tools
 - Game development using JavaScript(inside the 50 projects folder)
-- PHP-based dynamic websites
+- PHP-based dynamic websites(Some with frame-works like Laravel)
 
 Feel free to explore the projects and delve into the source code. Each project comes with its own set of challenges, solutions, and learnings that I've gained during the development process.
 
