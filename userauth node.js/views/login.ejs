@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+</head>
+<body>
+    
+    <h1> Welcome to Crypto Buja </h1>
+            <form action="/login" method="POST">
+                <div class="row">
+                    <% if (messages.error){ %>
+                        <div class="alert">
+                            <strong><%= messages.error %></strong>
+                        </div>
+                   <% } %>
+                </div>
+                <div class="headingsContainer">
+                    <h3><em> Login </em></h3>
+                </div> 
+                <div class="mainContainer">
+                    <label for="username">Email </label>
+                    <input type="text" placeholder="Enter Your Email" name="email" required>
+                    <br><br>
+                    <label for="pswrd">Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+            <center> <button type="submit"> Login </button>  
+            <p class="message">Don't have an account? <a href="/register">Sign Up</a></p></center>
+        </div>
+    </form>
+    <style>  
+    .row .alert{
+        display: flex;
+        color: red;
+        align-items: center;
+        justify-content: center;
+    }  
+    input[type=text], input[type=password]{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 15px 18px;
+        box-sizing: border-box;
+    }
+
+
+    body 
+    {
+    font-family:sans-serif; 
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:whitesmoke;
+    position: relative;
+    z-index: 1;
+    }
+
+
+    h1{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+
+    form{
+        width:35rem;
+        margin: auto;
+        color:whitesmoke;
+    }
+
+    input{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 15px 18px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #d2dbd4;
+        color: rgb(197, 111, 6);
+        padding: 10px 14px;
+        border-radius: 5px;
+        margin: 20px 50px;
+        width: 30%;
+        font-size: 18px;
+    }
+    button a{
+        color: rgb(197, 111, 6);
+    }
+    button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    form{
+        width:35rem;
+        margin: auto;
+        color:whitesmoke;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(11, 15, 13, 0.582);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    .headingsContainer{
+        text-align: center;
+    }
+    .mainContainer{
+        padding: 16px;
+    }
+    .subcontainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .subcontainer a{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+
+    .register{
+        color: white;
+        text-align: center;
+    }
+    
+    .register a{
+        color: rgb(74, 146, 235);
+    }
+    
+    .register a:link{
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        form{
+        width: 25rem;
+        }
+    
+    }
+    
+    @media screen and (max-width: 400px) {
+        form{
+        width: 20rem;
+        }
+    }
+
+    </style>
+</body>
+</html>
+
